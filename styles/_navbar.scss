@@ -1,0 +1,50 @@
+@import "variables";
+
+.navbar.navbar-light {
+    background-color: #FFF;
+    height: 110px;
+    margin: auto;
+    padding: 20px;
+    width: 100%;
+
+    .navbar-brand {
+        margin: 0;
+
+        .logo {
+            height: 70px;
+            width: 70px;
+        }
+    }
+
+    .nav-link {
+        color: $black;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 20px;
+        margin: 5px;
+        padding: 0 15px !important;
+        text-transform: uppercase;
+
+        &.active,
+        &:hover {
+            color: $black;
+            text-decoration: underline $yellow 4px;
+            text-underline-offset: 5px;
+        }
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid $black;
+        border-radius: 0.25rem;
+    }
+
+    .navbar-collapse {
+        background-color: $white;
+        flex-grow: 0;
+        padding: 1rem;
+    }
+}

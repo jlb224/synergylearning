@@ -1,0 +1,27 @@
+#footer {
+    background-color: $gray-200;
+    padding: 25px;
+    width: 100%;
+
+    .font-small {
+        font-size: .75rem;
+    }
+
+    #page-footer {
+        background-color: $gray-200;
+        font-size: 16px;
+        margin: auto;
+        max-width: 1140px;
+
+        ul.policies a {
+            margin-top: 2rem;
+            text-decoration: underline;
+        }
+
+        .fa.fa-phone {
+            font-size: 12.58px;
+            margin-right: 3px;
+        }
+    }
+}
+

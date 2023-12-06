@@ -1,0 +1,58 @@
+@import "variables";
+/*
+* Button.
+*
+*/
+.btn-primary,
+.btn-secondary,
+.btn-outline-light,
+.btn-outline-secondary {
+    border-radius: 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .2s ease-in;
+}
+
+.btn-primary {
+    color: $black;
+    background-color: $yellow;
+    border-color: $yellow;
+
+    &:hover,
+    &:focus,
+    &.focus,
+    &:not(:disabled):not(.disabled):active {
+        background-color: #f2d300;
+        border-color: $yellow;
+        color: $black;
+        box-shadow: 0 0 0 0.2rem rgba(51, 130, 201, 0.5);
+    }
+    &:focus {
+        outline: 0.2rem solid $black;
+    }
+}
+
+.btn-outline-secondary {
+    color: $black;
+    border-color: $black;
+    font-size: 12.8px;
+
+    .arrow svg {
+        fill: $black;
+    }
+
+    &:hover,
+    &:focus,
+    &.focus {
+        background-color: $black;
+        color: $white;
+
+        .arrow svg {
+            fill: $white;
+        }
+    }
+}
+
